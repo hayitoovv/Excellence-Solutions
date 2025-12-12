@@ -1,0 +1,367 @@
+/* CompanyActivity.module.css */
+
+/* Main Section */
+.section {
+  background: linear-gradient(to bottom right, 
+    oklch(0.984 0.003 247.858), 
+    white, 
+    oklch(0.979 0.021 166.113)
+  );
+}
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 5rem 1rem; /* default: ~16px */
+}
+
+/* sm breakpoint: 640px — 24px = 1.5rem */
+@media (min-width: 40rem) {
+  .container {
+    padding: 5rem 1.5rem;
+  }
+}
+
+/* lg breakpoint: 1024px — 32px = 2rem */
+@media (min-width: 64rem) {
+  .container {
+    padding: 5rem 2rem;
+  }
+}
+
+/* Header Styles */
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+  transition: all 0.6s ease-in-out;
+}
+
+.header.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.header.hidden {
+  opacity: 0;
+  transform: translateY(1.25rem);
+}
+
+/* .title {
+  color: oklch(0.596 0.145 163.225);
+  margin-bottom: 0.75rem;
+  font-size: 3rem;
+  font-weight: 500;
+} */
+
+.title {
+  color: #2C3E50;
+  margin-bottom: 0.75rem;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.01em; /* ⬆️ Biroz kengroq — Inter stiliga mos */
+  font-family: 'Inter', sans-serif;
+}
+
+.subtitle {
+  color: oklch(0.446 0.03 256.802);
+  max-width: 42rem;
+  margin: 0 auto;
+  font-size: 1rem;
+}
+
+/* Grid Layout */
+.grid {
+  display: grid;
+  gap: 2rem;
+  align-items: center;
+}
+
+@media (min-width: 64rem) {
+  .grid {
+    grid-template-columns: 1.2fr 0.8fr;
+  }
+}
+
+/* Left Column - Activities List */
+.activitiesList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  transition: all 0.7s ease-in-out;
+}
+
+.activitiesList.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.activitiesList.hidden {
+  opacity: 0;
+  transform: translateX(-2rem);
+}
+
+/* Activity Card */
+.activityCard {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  background-color: white;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 
+              0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.activityCard.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.activityCard.hidden {
+  opacity: 0;
+  transform: translateY(1.25rem);
+}
+
+.activityCard:hover {
+  box-shadow: 0 20px 60px -15px rgba(16, 185, 129, 0.3);
+  transform: scale(1.03);
+}
+
+/* Icon Container */
+.iconContainer {
+  flex-shrink: 0;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 1rem;
+  background: linear-gradient(to bottom right, 
+    oklch(0.765 0.177 163.223), 
+    oklch(0.596 0.145 163.225)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.6s ease-in-out;
+}
+
+.activityCard:hover .iconContainer {
+  transform: rotate(360deg);
+}
+
+.icon {
+  width: 1.75rem;
+  height: 1.75rem;
+  color: white;
+}
+
+/* Text Content */
+.textContent {
+  flex: 1;
+}
+
+.activityText {
+  color: oklch(0.278 0.033 256.848);
+  line-height: 1.625;
+  font-size: 1rem;
+}
+
+/* Right Column - Illustration */
+.illustrationWrapper {
+  display: flex;
+  justify-content: center;
+  transition: all 0.7s ease-in-out;
+}
+
+.illustrationWrapper.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.illustrationWrapper.hidden {
+  opacity: 0;
+  transform: translateX(2rem);
+}
+
+/* Illustration Card */
+.illustrationContainer {
+  position: relative;
+  width: 100%;
+  max-width: 28rem;
+  aspect-ratio: 1;
+}
+
+.illustrationCard {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+  background: linear-gradient(135deg, 
+    rgba(255, 255, 255, 0.5), 
+    rgba(236, 253, 245, 0.6)
+  );
+  backdrop-filter: blur(24px);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  padding: 2rem;
+  overflow: hidden;
+  transition: all 0.8s ease-in-out;
+}
+
+.illustrationCard.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.illustrationCard.hidden {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+/* Decorative Blobs */
+.blobTop {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 16rem;
+  height: 16rem;
+  background-color: rgba(167, 243, 208, 0.3);
+  border-radius: 9999px;
+  filter: blur(64px);
+}
+
+.blobBottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 12rem;
+  height: 12rem;
+  background-color: rgba(153, 246, 228, 0.2);
+  border-radius: 9999px;
+  filter: blur(64px);
+}
+
+/* Center Circle Container */
+.centerCircleContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Spinning Rings */
+.outerRing {
+  position: absolute;
+  width: 14rem;
+  height: 14rem;
+  border-radius: 9999px;
+  border: 4px solid rgba(132, 204, 187, 0.4);
+  animation: spin 20s linear infinite;
+}
+
+.middleRing {
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 9999px;
+  border: 4px solid rgba(94, 234, 212, 0.3);
+  animation: spinReverse 15s linear infinite;
+}
+
+/* Center Success Circle */
+.centerCircle {
+  position: relative;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 9999px;
+  background: linear-gradient(to bottom right, 
+    oklch(0.765 0.177 163.223), 
+    oklch(0.596 0.145 163.225)
+  );
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.6s ease-in-out;
+  transition-delay: 300ms;
+}
+
+.centerCircle.visible {
+  transform: scale(1);
+}
+
+.centerCircle.hidden {
+  transform: scale(0);
+}
+
+.checkIcon {
+  width: 3rem;
+  height: 3rem;
+  color: white;
+  stroke-width: 3;
+}
+
+/* Floating Icon Bubbles */
+.floatingIcon {
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.75rem;
+  background-color: white;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.floatingIcon.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.floatingIcon.hidden {
+  opacity: 0;
+  transform: scale(0);
+}
+
+.floatingIcon.animating {
+  animation: float ease-in-out infinite;
+}
+
+.floatingIconImage {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: oklch(0.596 0.145 163.225);
+}
+
+/* Animations */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinReverse {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}

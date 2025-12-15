@@ -36,7 +36,7 @@ export function Header() {
           className="mr-2 text-white text-xl font-bold tracking-wider hover:text-blue-100 transition-colors whitespace-nowrap"
           style={{ color: '#ffffff', textDecoration: 'none' }}
         >
-          +998 97 280 02 25 
+          +998 90 123 45 67 
         </a>
       </div>
 
@@ -115,7 +115,7 @@ export function Header() {
               >
                 <Phone className="w-4 h-4 text-[#00A651] group-hover:text-white transition-colors" />
                 <span className="group-hover:text-white whitespace-nowrap">
-                  +998 90 510 41 91
+                  +998 90 123 45 67
                 </span>
               </a>
 

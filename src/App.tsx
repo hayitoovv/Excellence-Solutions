@@ -13,6 +13,7 @@ import { ScrollToTop } from './components/ScrollToTop';
 import FreeServices from "./components/FreeServices";
 import { OurProjects } from './components/OurProjects';
 import HamkorlikPage  from './components/HamkorlikPage';
+import CompanyNews  from './components/CompanyNews';
 
 export default function App() {
   return (
@@ -59,6 +60,7 @@ export default function App() {
 
             <Route path="/OurProjects" element={<OurProjects />} />
              <Route path="/HamkorlikPage" element={<HamkorlikPage />} />
+                <Route path="/CompanyNews" element={<CompanyNews />} />
 
           </Routes>
         </main>

@@ -22,7 +22,7 @@ export default function Navigation() {
     { label: 'Kompaniya haqida', href: '/#about', isScroll: true, scrollTargetId: 'company-activity' },
     { label: 'Bizning xizmatlarimiz', href: '/#services', isScroll: true, scrollTargetId: 'services-section' },
     { label: 'Bizning loyihalarimiz', href: '/OurProjects' }, // ✅ Bu to'g'ridan-to'g'ri sahifaga o'tadi
-    { label: "Yangiliklar va e'lonlar", href: '/yangiliklar' },
+    { label: "Yangiliklar va e'lonlar", href: '/CompanyNews' },
     { label: 'Hamkorlik', href: '/HamkorlikPage' },
     { label: 'Bog\'lanish', href: '/#contact', isScroll: true, scrollTargetId: 'contact-section' },
   ];

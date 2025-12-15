@@ -47,9 +47,9 @@ export function PartnershipProcess() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative" style={{ zIndex: 1 }}>
             {steps.map((step, index) => (
-              <div key={index} className="relative">
+              <div key={index} className="relative flex flex-col h-full">
                 <div
-                  className="p-6 transition-all duration-300 hover:shadow-lg"
+                  className="p-6 transition-all duration-300 hover:shadow-lg h-full flex flex-col"
                   style={{
                     backgroundColor: '#FFFFFF',
                     borderRadius: '16px',

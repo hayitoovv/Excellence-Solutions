@@ -7,9 +7,13 @@ import { PartnersGrid} from './PartnersGrid';
 import { CollaborationBenefits} from './CollaborationBenefits';
 import { PartnershipProcess} from './PartnershipProcess';
 import { CTASection} from './CTASection';
-import {FooterHamkorlik} from './FooterHamkorlik';
+import {Footer} from './Footer';
+import { useLayoutEffect } from 'react';
 
 const HamkorlikPage = () => {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0); // ⚡ Darhol yuqoriga
+  }, []);
   return (
     <div>
       {/* Sahifa kontenti — kerakli ketma-ketlikda */}
@@ -20,7 +24,7 @@ const HamkorlikPage = () => {
       <PartnershipProcess/>
       <CTASection />
       {/* Footer */}
-      <FooterHamkorlik />
+      <Footer />
     </div>
   );
 };

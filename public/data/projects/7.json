@@ -1,0 +1,25 @@
+{
+  "id": 7,
+  "title": "Tarmoqlarni Sozlash",
+  "description": "Korporativ va ta’lim tarmoqlarini markazlashtirilgan boshqarish, sozlash va nazorat qilish uchun aqlli tarmoq boshqaruvi tizimi",
+  "longDescription": "Bu dastur IT infratuzilmasini boshqarishga mo‘ljallangan bo‘lib, tarmoq qurilmalarini uzoqdan konfiguratsiya qilish, dinamik va statik IP manzillarni boshqarish, xavfsizlik hodisalarini kuzatish hamda tarmoq yuklamasi, bandwidth va trafik tahlilini amalga oshirish imkonini beradi. Tizim oliy ta’lim muassasalari, korporativ ofislarning tarmoq infratuzilmasini soddalashtirish hamda ishonchliligini oshirish uchun mo‘ljallangan.",
+  "category": "Networking / IT Infrastructure",
+  "image": "/pj7.png",
+  "metric": "+60% tarmoq sozlamalari tezligi",
+  "features": [
+    "Tarmoq qurilmalarini konfiguratsiya qilish",
+    "IP manzillarni boshqarish",
+    "Xavfsizlik monitoringi",
+    "Tarmoq yuklamasini tahlil qilish"
+  ],
+  "techStack": [
+    "Python",
+    "Ansible / Netmiko",
+    "Nmap / Wireshark (API integratsiyasi)",
+    "PostgreSQL",
+    "React",
+    "TypeScript",
+    "SNMP / REST API",
+    "Grafana / Prometheus"
+  ]
+}

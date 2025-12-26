@@ -27,8 +27,8 @@ export function ScrollToTop() {
       onClick={scrollToTop}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className={`
-        fixed z-50 bottom-4 right-4
+      className={`  
+        fixed z-10 bottom-4 right-4
         bg-gradient-to-br from-[#00A651] to-[#16C172]
         text-white rounded-full
         flex items-center justify-center

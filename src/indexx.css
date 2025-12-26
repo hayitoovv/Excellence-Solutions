@@ -1178,6 +1178,9 @@
   .text-left {
     text-align: left;
   }
+  .text-justify {
+  text-align: justify;
+  }
 
   .text-center {
     text-align: center;
@@ -1315,6 +1318,9 @@
 
   .z-50 {
     z-index: 50;
+  }
+  .z-60 {
+    z-index: 60;
   }
 
   .shadow-lg {

@@ -24,7 +24,7 @@ export default function Navigation() {
     { label: 'Bizning loyihalarimiz', href: '/OurProjects' }, // ✅ Bu to'g'ridan-to'g'ri sahifaga o'tadi
     { label: "Yangiliklar va e'lonlar", href: '/CompanyNews' },
     { label: 'Hamkorlik', href: '/HamkorlikPage' },
-    { label: 'Bog\'lanish', href: '/#contact', isScroll: true, scrollTargetId: 'contact-section' },
+    { label: 'Bog\'lanish', href:'/#contact', isScroll: true, scrollTargetId: 'contact-section' },
   ];
 
   const scrollToSection = (sectionId: string) => {

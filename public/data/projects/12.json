@@ -1,0 +1,26 @@
+{
+  "id": 12,
+  "title": "Omborxona Tizimini Monitoring Qilish",
+  "description": "Sanoat, savdo va logistika sohalarida ombor operatsiyalarini real vaqtda kuzatish va boshqarish uchun zamonaviy monitoring tizimi",
+  "longDescription": "Bu tizim sanoat korxonalari, savdo do‘konlari hamda logistika markazlari uchun mo‘ljallangan bo‘lib, mahsulotlarning kirim-chiqimini aniqlik bilan kuzatish, real vaqtda qoldiqlarni monitoring qilish, avtomatik hisobotlar va tahlil chiqarish hamda RFID yoki shtrix-kod skanerlar bilan integratsiya imkonini beradi. Natijada ombor xarajatlari kamayadi, inventarizatsiya tezligi oshadi va yetkazib berish zanjiri samarali boshqariladi.",
+  "category": "Logistics / Inventory / IoT",
+  "image": "/pj12.png",
+  "metric": "+50% ombor operatsiyalari aniqligi",
+  "features": [
+    "Kirim-chiqim nazorati",
+    "Real vaqt qoldiq monitoringi",
+    "Hisobot va tahlil",
+    "RFID / shtrix-kod integratsiyasi"
+  ],
+  "techStack": [
+    "React",
+    "TypeScript",
+    "Node.js",
+    "Express",
+    "PostgreSQL",
+    "Redis",
+    "Barcode / QR / RFID SDK",
+    "Socket.IO (real-time uchun)",
+    "Tailwind CSS"
+  ]
+}

@@ -40,11 +40,11 @@ export function FAQSection() {
   };
 
   return (
-    <div className="flex flex-col">
-      <div className='bg-white rounded-2xl shadow-klsm p-8'>
+    <div className="flex flex-col h-full">
+      <div className='bg-white rounded-2xl shadow-klsm p-8 h-full flex flex-col'>
         <h2 className="mb-8 font-bold text-gray-800">Ko'p beriladigan savollar</h2>
         
-        <div className="grid grid-cols-1 gap-4">
+        <div className="grid grid-cols-1 gap-4 flex-grow">
           {faqData.map((item, index) => (
             <div
               key={index}

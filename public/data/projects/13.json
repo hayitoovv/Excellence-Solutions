@@ -1,0 +1,25 @@
+{
+  "id": 13,
+  "title": "Tashkilotlar Analitikasi (Big Data)",
+  "description": "Yirik korxonalar va davlat tashkilotlari uchun katta hajmdagi ma’lumotlarni tahlil qilish, vizualizatsiya qilish hamda strategik qaror qabul qilish imkonini beruvchi aqlli analitika platformasi",
+  "longDescription": "Bu yechim yirik korxonalar, davlat idoralari hamda strategik tashkilotlar uchun mo‘ljallangan bo‘lib, ERP, CRM va boshqa tizimlardan kelib tushayotgan katta hajmdagi ma’lumotlarni real vaqtda yoki puchakli (batch) tarzda qayta ishlaydi. Platforma interaktiv dashboardlar, trendlar va anomaliyalarni vizual ko‘rsatish, kelajakdagi hodisalarni bashorat qilish (machine learning asosida) hamda qaror qabul qilish jarayonini qo‘llab-quvvatlash orqali tashkilot samaradorligini keskin oshiradi.",
+  "category": "Big Data / Business Intelligence / Analytics",
+  "image": "/pj13.png",
+  "metric": "+70% strategik qarorlar aniqligi",
+  "features": [
+    "Katta hajmdagi ma’lumotlarni qayta ishlash",
+    "Vizual analitika va dashboard",
+    "Prognozlash va qaror qabul qilish",
+    "Integratsiya (ERP, CRM)"
+  ],
+  "techStack": [
+    "Apache Spark / Flink",
+    "Python (Pandas, Scikit-learn)",
+    "Apache Kafka",
+    "PostgreSQL / ClickHouse / MongoDB",
+    "Apache Airflow",
+    "React",
+    "D3.js / Apache Superset / Grafana",
+    "Docker / Kubernetes"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": 2,
+  "title": "Aqlli robot",
+  "description": "Foydalanuvchi savollariga avtomatik javob berish va buyruqlarni bajarish imkoniyatiga ega sun’iy intellekt asosidagi yordamchi",
+  "longDescription": "Bu loyiha ta’lim muassasalari hamda korxona va xizmat ko‘rsatish sohalarida foydalanish uchun mo‘ljallangan bo‘lib, foydalanuvchilarga ovozli va matnli muloqot orqali avtomatik yordam ko‘rsatadi. Tizim o‘zini o‘rgatish (self-learning) qobiliyatiga ega bo‘lib, vaqt o‘tishi bilan javoblarni aniqlik va samaradorlik jihatidan takomillashtirib boradi.",
+  "category": "AI / Chatbot",
+  "image": "/pj2.png",
+  "metric": "+60% mijoz qoniqish darajasi",
+  "features": [
+    "Foydalanuvchi savollariga avtomatik javob berish",
+    "Buyruqlarni aniqlash va bajarish",
+    "O‘rganish (self-learning) mexanizmi",
+    "Ovozli va matnli muloqot imkoniyati"
+  ],
+  "techStack": [
+    "Python",
+    "TensorFlow / PyTorch",
+    "FastAPI / Node.js",
+    "WebSockets",
+    "PostgreSQL",
+    "Redis",
+    "React",
+    "SpeechRecognition API"
+  ]
+}

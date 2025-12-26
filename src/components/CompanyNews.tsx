@@ -129,9 +129,9 @@ export default function CompanyNews() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white py-20 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-[#00A651] to-[#008a44] text-white py-20 overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#00A651] rounded-full blur-3xl"></div>
+          <div className=""></div>
           <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-500 rounded-full blur-3xl"></div>
         </div>
         
@@ -141,10 +141,11 @@ export default function CompanyNews() {
             Kompaniyamizdagi so'nggi yangiliklar, e'lonlar va muhim voqealar bilan tanishing.
           </p>
         </div>
+        <div className="absolute bottom-0 left-0 right-0 h-16 bg-[#F8FAFC]" style={{ clipPath: 'polygon(0 100%, 100% 100%, 100% 0, 0 100%)' }}></div>
       </section>
 
       {/* Main Content */}
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
         {/* Filter Bar */}
         <div className="mb-12">
           <div className="flex flex-wrap gap-3 justify-center">
@@ -259,7 +260,7 @@ export default function CompanyNews() {
         )}
       </main>
 
-      <Footer/>
+      
 
       {/* Add fadeIn animation */}
       <style>{`

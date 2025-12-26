@@ -1,0 +1,28 @@
+{
+  "id": 1,
+  "title": "Korxona rahbari virtual qabulxonasi",
+  "description": "Virtual murojaatlarni qabul qilish va boshqarish tizimi davlat korxonalari uchun",
+  "longDescription": "Bu loyiha davlat tashkilotlari uchun mo'ljallangan bo'lib, fuqarolar virtual tarzda murojaat qilish imkoniyatiga ega bo'ladi. Tizim murojaatlarni avtomatik ravishda qayta ishlaydi, tegishli bo'limlarga yo'naltiradi va jarayonni to'liq nazorat qilishni ta'minlaydi.",
+  "category": "Web",
+  "image": "/pj1.png",
+  "metric": "+40% samaradorlik",
+  "features": [
+    "Virtual murojaat qabul qilish va avtomatik tasdiqlash",
+    "Murojaat holatini real vaqtda kuzatish tizimi",
+    "Avtomatik yo'naltirish va tegishli bo'limga yuborish",
+    "Nazoratchining to'liq funksional kabineti",
+    "Biriktirilgan fayllarni ko'rish va yuklab olish",
+    "SMS va email bildirishnomalar integratsiyasi",
+    "To'liq hisobot va statistika paneli",
+    "Murojaatlarni rad etish va izoh qoldirish"
+  ],
+  "techStack": [
+    "React",
+    "TypeScript",
+    "Node.js",
+    "Express",
+    "PostgreSQL",
+    "Redis",
+    "Tailwind CSS"
+  ]
+}

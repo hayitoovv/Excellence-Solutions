@@ -1,26 +1,31 @@
+// src/components/Header.tsx - ParticlesBackground bilan
 import { Mail, Phone } from 'lucide-react';
+import { ParticlesBackground } from './ParticlesBackground';
 
 export function Header() {
   return (
-    <header className="bg-white hidden md:block border-b border-[#00A651]/20 relative z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+    <header className="bg-white hidden md:block border-b border-[#00A651]/20 relative z-50 overflow-hidden">
+      {/* Particles Background - orqa fon effekti */}
+      <ParticlesBackground id="header-particles" className="opacity-40" />
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 relative" style={{ zIndex: 10 }}>
         <div className="flex items-center justify-between gap-8">
           {/* Logo */}
           <div className="flex items-center flex-shrink-0">
             <img
-              src="src/public/logo.png"
+              src="/logo.png"
               alt="Excellence Solutions Logo"
               className="h-12 object-contain"
             />
           </div>
 
          {/* Center - Free Consultation */}
-<div className="flex-1 flex items-center justify-center">
-  <div className="relative group">
+            <div className="flex-1 flex items-center justify-center">
+            <div className="relative group">
     {/* Tashqi glow effekti */}
     <div className="absolute -inset-1 bg-gradient-to-r from-[#2563eb] via-[#3b82f6] to-[#2563eb] rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-300"></div>
 
-    {/* Asosiy tugma — shu yerga phone-button klassi beriladi */}
+    {/* Asosiy tugma */}
     <div className="phone-button group flex items-center space-x-4">
 
       <div className="w-10 h-10 rounded-full border border-white flex items-center justify-center transition-colors group shadow-sm hover:shadow-md mr-4 mt-4">
@@ -68,7 +73,7 @@ export function Header() {
               {/* Languages Row */}
               <div className="flex items-center space-x-2 text-sm h-8">
                 <img
-                  src="src/public/1.png"
+                  src="/1.png"
                   className="h-5 object-contain"
                   alt="UZ flag"
                 />
@@ -81,7 +86,7 @@ export function Header() {
                 </button>
                 <span className="text-gray-300">|</span>
                 <img
-                  src="src/public/2.png"
+                  src="/2.png"
                   className="h-5 object-contain"
                   alt="RU flag"
                 />
@@ -94,7 +99,7 @@ export function Header() {
                 </button>
                 <span className="text-gray-300">|</span>
                 <img
-                  src="src/public/3.png"
+                  src="/3.png"
                   className="h-5 object-contain"
                   alt="EN flag"
                 />

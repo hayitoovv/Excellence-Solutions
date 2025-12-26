@@ -23,8 +23,6 @@ const HamkorlikPage = () => {
       <CollaborationBenefits />
       <PartnershipProcess/>
       <CTASection />
-      {/* Footer */}
-      <Footer />
     </div>
   );
 };

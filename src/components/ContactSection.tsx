@@ -12,7 +12,7 @@ export function ContactSection() {
     e.preventDefault();
 
     try {
-      const res = await fetch("http://localhost:8080/api/contact/submit", {
+      const res = await fetch("http://localhost:8081/api/submit", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -50,12 +50,12 @@ export function ContactSection() {
   };
 
   return (
-    <div id='contact-section' className="flex flex-col">
+    <div id='contact-section' className="flex flex-col h-full">
       
-      <form onSubmit={handleSubmit} className="bg-white rounded-2xl shadow-klsm p-8">
+      <form onSubmit={handleSubmit} className="bg-white rounded-2xl shadow-klsm p-8 h-full flex flex-col">
         <h2 className="mb-8 font-bold text-gray-800">Biz bilan bog'laning</h2>
 
-        <div className="space-y-6">
+        <div className="space-y-6 flex-grow">
 
           {/* Full Name Field */}
           <div>

@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import { Monitor, Smartphone, Shield, Cloud, Filter, ArrowRight, Phone, Mail, MapPin } from 'lucide-react';
+import { Monitor, Smartphone, Shield, Cloud, Filter, ArrowRight, Phone, Mail, Bot } from 'lucide-react';
 import { ProjectCard } from './ProjectCard';
 import { useLayoutEffect } from 'react';
-type Category = 'All' | 'Web' | 'Mobile' | 'Systems' | 'Security';
+type Category = 'All' | 'Web' | 'Mobile' | 'Systems' | 'AI / Robot';
 
 interface Project {
   id: number;
@@ -25,55 +25,134 @@ export function OurProjects() {
   const projects: Project[] = [
     {
       id: 1,
-      title: 'E-Tijorat Platformasi',
-      description: 'Zamonaviy onlayn do\'kon uchun to\'liq funksional veb-platforma. Buyurtmalarni boshqarish, to\'lov tizimlari va analitika.',
+      title: 'Korxona rahbari virtual qabulxonasi',
+      description: 'DASTUR IMKONIYATLARI: Virtual murojaatlarni qabul qilish va tasdiq xabarini uzatish Virtual qabulxona nazoratchisi kabineti mavjudligi Murojaatlarni ko‘rish, boshqa tashkilotga yoki bo‘limga uzatish Asosli ravishda virtual murojaatlarni rad etish Virtual murojaatlarda biriktirilgan ma’lumotlarni nazoratlash imkoniyati QO‘LLANILISH SOHASI Davlat tashkiloti korxonalarida virtual qabulxonani tashkil etish Fuqarolarga interaktiv xizmatni tashkil etish',
       category: 'Web',
-      image: 'https://images.unsplash.com/photo-1665470909939-959569b20021?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBhcHBsaWNhdGlvbiUyMGRhc2hib2FyZHxlbnwxfHx8fDE3NjUxNjk5MjN8MA&ixlib=rb-4.1.0&q=80&w=1080',
+      image: 'public/pj1.png',
       metric: '+40% savdo',
       icon: <Monitor className="size-4" />
     },
     {
       id: 2,
-      title: 'Mobil Bank Ilovasi',
-      description: 'Xavfsiz va qulay mobil bank dasturi. Tezkor to\'lovlar, hisoblarni boshqarish va biometrik autentifikatsiya.',
-      category: 'Mobile',
-      image: 'https://images.unsplash.com/photo-1605108222700-0d605d9ebafe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBpbnRlcmZhY2V8ZW58MXx8fHwxNzY1MjIwODE5fDA&ixlib=rb-4.1.0&q=80&w=1080',
+      title: 'Aqlli robot',
+      description: 'Foydalanuvchilarga matn va ovoz orqali avtomatik javob beruvchi sun’iy intellekt. O‘rganadi, takomillashtiradi — har doim yaxshiroq yordam beradi.',
+      category: 'AI / Robot',
+      image: '/pj2.png',
       metric: '50,000+ foydalanuvchi',
       icon: <Smartphone className="size-4" />
     },
     {
       id: 3,
-      title: 'Korporativ Kiberhavfsizlik',
-      description: 'Keng ko\'lamli kiberhavfsizlik yechimi. Tarmoq monitoringi, xavflarni aniqlash va real vaqtda himoya.',
-      category: 'Security',
-      image: 'https://images.unsplash.com/photo-1691435828932-911a7801adfb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjeWJlcnNlY3VyaXR5JTIwbmV0d29ya3xlbnwxfHx8fDE3NjUxNjIwNTl8MA&ixlib=rb-4.1.0&q=80&w=1080',
+      title: 'Zarmeduniver.com',
+      description: 'Universitet portali: talabalar, xodimlar, hujjatlar, yangiliklar — barchasi bitta platformada. Masofaviy ta’limni osonlashtirish.',
+      category: 'Web',
+      image: '/pj3.png',
       metric: '99.9% himoya',
       icon: <Shield className="size-4" />
     },
     {
       id: 4,
-      title: 'Bulutli Infratuzilma',
-      description: 'Yuqori samarali bulutli yechimlari. Avtomatik masshtablanish, zaxiralash va yukni taqsimlash.',
-      category: 'Systems',
-      image: 'https://images.unsplash.com/photo-1667984390553-7f439e6ae401?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjbG91ZCUyMGNvbXB1dGluZyUyMHRlY2hub2xvZ3l8ZW58MXx8fHwxNzY1MTY3OTYxfDA&ixlib=rb-4.1.0&q=80&w=1080',
+      title: ' Korxona va tashkilot xodimlari KPI',
+      description: 'Xodimlar samaradorligini avtomatik baholash va reyting bilan nazorat qilish. Rahbariyatga qaror qabul qilishda yordam.',
+      category: 'Web',
+      image: '/pj4.png',
       metric: '99% ishonchlilik',
       icon: <Cloud className="size-4" />
     },
     {
       id: 5,
-      title: 'CRM Tizimi',
-      description: 'Mijozlar bilan munosabatlarni boshqarish tizimi. Savdo voronkasi, analitika va avtomatlashtirish.',
+      title: 'Kutubxona Axborot Tizimi',
+      description: 'Kitoblarni QR-kod yoki ID orqali hisobga olish, o‘quvchilarni nazorat qilish, statistika va aqlli qidiruv.',
       category: 'Web',
-      image: 'https://images.unsplash.com/photo-1665470909939-959569b20021?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBhcHBsaWNhdGlvbiUyMGRhc2hib2FyZHxlbnwxfHx8fDE3NjUxNjk5MjN8MA&ixlib=rb-4.1.0&q=80&w=1080',
+      image: '/pj5.png',
       metric: '60+ mijoz',
       icon: <Monitor className="size-4" />
     },
     {
       id: 6,
-      title: 'Mobil O\'quv Platformasi',
-      description: 'Ta\'lim uchun interaktiv mobil ilova. Video darslar, testlar va o\'quvchilar uchun shaxsiy kabinet.',
+      title: 'Mexatronika Tizimlari',
+      description: 'Sensorlar, avtomatlashtirilgan jarayonlar va real vaqt monitoringi — sanoat va robototexnikada ishonchli boshqaruv.',
+      category: 'Systems',
+      image: '/pj6.png',
+      metric: '10,000+ talaba',
+      icon: <Smartphone className="size-4" />
+    },
+    {
+      id: 7,
+      title: ' Tarmoqlarni Sozlash',
+      description: 'Tarmoq qurilmalarini konfiguratsiya qilish, IP manzillarni boshqarish, xavfsizlik monitoringi va yuklamani tahlil qilish.',
+      category: 'Systems',
+      image: '/pj7.png',
+      metric: '10,000+ talaba',
+      icon: <Smartphone className="size-4" />
+    }
+    ,
+    {
+      id: 8,
+      title: 'Bilimlarni Nazorat Qilish Tizimi',
+      description: 'Testlar, imtihonlar, avtomatik baholash va proktoring — ta’lim muassasalari va sertifikatlash markazlari uchun ideal yechim.',
+      category: 'Web',
+      image: '/pj8.png',
+      metric: '10,000+ talaba',
+      icon: <Smartphone className="size-4" />
+    }
+    ,
+    {
+      id: 9,
+      title: ' Sun’iy Intellekt Asosida O‘qitish',
+      description: 'Har bir talaba uchun shaxsiylashtirilgan o‘quv trayektoriyasi, faolligini tahlil qilish va aqlli tavsiyalar.',
+      category: 'AI / Robot',
+      image: '/pj9.png',
+      metric: '10,000+ talaba',
+      icon: <Smartphone className="size-4" />
+    }
+    ,
+    {
+      id: 10,
+      title: ' Telegram Botlar',
+      description: 'Avtomatik bildirishnomalar, to‘lovlar, ro‘yxatdan o‘tish va statistika — ta’lim, biznes va xizmat ko‘rsatishda foydalanish.',
       category: 'Mobile',
-      image: 'https://images.unsplash.com/photo-1605108222700-0d605d9ebafe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBpbnRlcmZhY2V8ZW58MXx8fHwxNzY1MjIwODE5fDA&ixlib=rb-4.1.0&q=80&w=1080',
+      image: '/pj10.png',
+      metric: '10,000+ talaba',
+      icon: <Smartphone className="size-4" />
+    }
+    ,
+    {
+      id: 11,
+      title: 'Elektron Do‘kon',
+      description: 'Mahsulotlar katalogi, onlayn buyurtma, to‘lov, ombor integratsiyasi va mijozlar bilan aloqa — savdo korxonalari uchun mustahkam platforma.',
+      category: 'Web',
+      image: '/pj11.png',
+      metric: '10,000+ talaba',
+      icon: <Smartphone className="size-4" />
+    }
+    ,
+    {
+      id: 12,
+      title: 'Omborxona Tizimini Monitoring Qilish',
+      description: 'Kirim-chiqim, real vaqt qoldiq monitoringi, RFID/shtrix-kod integratsiyasi — logistika va sanoat omborlarida samaradorlikni oshirish.',
+      category: 'Systems',
+      image: '/pj12.png',
+      metric: '10,000+ talaba',
+      icon: <Smartphone className="size-4" />
+    }
+    ,
+    {
+      id: 13,
+      title: 'Tashkilotlar Analitikasi (Big Data)',
+      description: 'ERP/CRM ma’lumotlarini tahlil qilish, vizual dashboardlar, prognozlash — yirik korxonalar va davlat tashkilotlari uchun strategik yechim.',
+      category: 'AI / Robot',
+      image: '/pj13.png',
+      metric: '10,000+ talaba',
+      icon: <Smartphone className="size-4" />
+    }
+    ,
+    {
+      id: 14,
+      title: ' Fan Tarmoqlaridan Lug‘at Ilavasi',
+      description: 'IT, mexatronika, elektrotexnika va boshqa fanlarning terminlarini tarjima qilish, ovozli o‘qish, offline rejim va AI tavsiyala',
+      category: 'Mobile',
+      image: '/pj14.png',
       metric: '10,000+ talaba',
       icon: <Smartphone className="size-4" />
     }
@@ -84,7 +163,7 @@ export function OurProjects() {
     { name: 'Web', icon: <Monitor className="size-4" /> },
     { name: 'Mobile', icon: <Smartphone className="size-4" /> },
     { name: 'Systems', icon: <Cloud className="size-4" /> },
-    { name: 'Security', icon: <Shield className="size-4" /> }
+    { name: 'AI / Robot', icon: <Bot className="size-4" /> }
   ];
 
   const filteredProjects = selectedCategory === 'All' 
@@ -144,13 +223,11 @@ export function OurProjects() {
                 }`}
               >
                 {cat.icon}
-                <span>{cat.name === 'All' ? 'Barchasi' : cat.name === 'Systems' ? 'Tizimlar' : cat.name === 'Security' ? 'Xavfsizlik' : cat.name}</span>
+                <span>{cat.name === 'All' ? 'Barchasi' : cat.name === 'Systems' ? 'Tizimlar' : cat.name === 'AI / Robot' ? 'AI / Robot' : cat.name}</span>
               </button>
             ))}
           </div>
-          <div className="mt-4 text-sm text-gray-600">
-            {filteredProjects.length} ta loyiha topildi
-          </div>
+         
         </div>
 
         {/* Projects Grid */}
@@ -172,55 +249,6 @@ export function OurProjects() {
           </div>
         )}
       </section>
-
-      {/* CTA Section */}
-      {/* <section className="bg-[#1E293B] text-white py-16"> */}
-     <section style={{ backgroundColor: '#1E293B' }} className="text-white py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-4xl mb-4">Keling, birgalikda yarataylik!</h2>
-              <p className="text-lg text-gray-300 mb-6">
-                Sizning loyihangizni muhokama qilish va professional IT yechimlari bilan tanishish uchun biz bilan bog&apos;laning.
-              </p>
-              <button className="bg-[#00A651] text-white px-8 py-4 rounded-lg hover:bg-[#008a44] transition-all shadow-lg inline-flex items-center gap-2 group">
-                Aloqaga chiqish
-                <ArrowRight className="size-5 group-hover:translate-x-1 transition-transform" />
-              </button>
-            </div>
-            <div className="space-y-4">
-              <div className="flex items-start gap-4 bg-white/5 p-4 rounded-lg">
-                <Phone className="size-6 text-[#00A651] flex-shrink-0 mt-1" />
-                <div>
-                  <div className="text-sm text-gray-400">Telefon</div>
-                  <div className="text-lg">+998 71 123 45 67</div>
-                </div>
-              </div>
-              <div className="flex items-start gap-4 bg-white/5 p-4 rounded-lg">
-                <Mail className="size-6 text-[#00A651] flex-shrink-0 mt-1" />
-                <div>
-                  <div className="text-sm text-gray-400">Email</div>
-                  <div className="text-lg">info@excellenceslutions.uz</div>
-                </div>
-              </div>
-              <div className="flex items-start gap-4 bg-white/5 p-4 rounded-lg">
-                <MapPin className="size-6 text-[#00A651] flex-shrink-0 mt-1" />
-                <div>
-                  <div className="text-sm text-gray-400">Manzil</div>
-                  <div className="text-lg">Toshkent, Amir Temur ko&apos;chasi 108</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="bg-[#0f1419] text-gray-400 py-8">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p>&copy; 2025 Excellence Solutions. Barcha huquqlar himoyalangan.</p>
-        </div>
-      </footer>
     </div>
   );
 }

@@ -1,0 +1,25 @@
+{
+  "id": 5,
+  "title": "Kutubxona Axborot Tizimi",
+  "description": "Zamonaviy elektron kutubxona boshqaruvi — kitoblarni hisobga olish, o‘quvchilarni kuzatish va aqlli qidiruv imkoniyatlari bilan",
+  "longDescription": "Bu tizim oliy va o‘rta ta’lim muassasalari hamda axborot-resurs markazlari uchun mo‘ljallangan bo‘lib, kitoblar elektron katalogi, o‘quvchilar uchun shaxsiy kabinet, kitob berish va qaytarish jarayonlarini nazorat qilish, QR-kod yoki ID orqali aniqlik bilan hisobga olish, hamda foydalanish statistikasini tahlil qilish kabi funksiyalarni taqdim etadi.",
+  "category": "Web / Education",
+  "image": "/pj5.png",
+  "metric": "+80% kutubxona resurslaridan foydalanish",
+  "features": [
+    "Kitoblar elektron katalogi",
+    "O‘quvchi va kitob berish nazorati",
+    "Qidiruv va statistik tahlil",
+    "QR-kod yoki ID asosida hisobga olish"
+  ],
+  "techStack": [
+    "React",
+    "TypeScript",
+    "Node.js",
+    "Express",
+    "PostgreSQL",
+    "Redis",
+    "Tailwind CSS",
+    "QR Code Generator / Scanner API"
+  ]
+}

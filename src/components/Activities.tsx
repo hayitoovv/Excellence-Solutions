@@ -35,7 +35,7 @@ export function Activities() {
   ];
 
   return (
-    <section id="services-section" className="py-20 bg-gradient-to-b from-[#F0F9F4] via-white to-[#E8F5E9]">
+    <section id="services-section" className="py-20 bg-gradient-to-b from-[#F0F9F4] via-white to-[#E8F5E9] ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div  className="text-center mb-16">
@@ -51,7 +51,7 @@ export function Activities() {
         </div>
 
         {/* Activities Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 z-10">
           {activities.map((activity, index) => {
             const Icon = activity.icon;
             return (

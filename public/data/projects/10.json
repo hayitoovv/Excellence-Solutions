@@ -1,0 +1,25 @@
+{
+  "id": 10,
+  "title": "Telegram Botlar",
+  "description": "Ta’lim, biznes va xizmat ko‘rsatish sohalarida foydalanish uchun moslashuvchan va aqlli Telegram bot platformasi",
+  "longDescription": "Bu yechim ta’lim muassasalari, biznes loyihalari hamda xizmat ko‘rsatish tizimlari uchun mo‘ljallangan bo‘lib, foydalanuvchilarga avtomatik xabarlar, to‘lov tizimlari orqali ro‘yxatdan o‘tkazish, admin panel orqali kontent va foydalanuvchi boshqaruvi hamda batafsil statistik hisobotlar imkonini beradi. Platforma Telegram tarmog‘i orqali mijozlar bilan doimiy aloqada bo‘lish va xizmatlarni avtomatlashtirishga yordam beradi.",
+  "category": "Messaging / Automation / Business",
+  "image": "/pj10.png",
+  "metric": "+90% mijoz bilan aloqa samaradorligi",
+  "features": [
+    "Avtomatik xabarlar va bildirishnomalar",
+    "To‘lov va ro‘yxatdan o‘tkazish",
+    "Admin panel orqali boshqaruv",
+    "Statistik hisobotlar"
+  ],
+  "techStack": [
+    "Python",
+    "aiogram / python-telegram-bot",
+    "Node.js (ixtiyoriy)",
+    "PostgreSQL",
+    "Redis",
+    "Stripe / Click / Payme API",
+    "React (admin panel uchun)",
+    "Nginx / Docker"
+  ]
+}

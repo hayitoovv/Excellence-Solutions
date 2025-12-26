@@ -1,0 +1,25 @@
+{
+  "id": 8,
+  "title": "Bilimlarni Nazorat Qilish Tizimi",
+  "description": "Ta’lim muassasalari va sertifikatlash markazlari uchun test, imtihon va bilim baholashni avtomatlashtiruvchi zamonaviy platforma",
+  "longDescription": "Bu tizim oliy va o‘rta maxsus ta’lim muassasalari hamda sertifikatlash markazlari uchun mo‘ljallangan bo‘lib, testlar va imtihonlarni tashkil qilish, javoblarni avtomatik baholash, natijalarni statistik tahlil qilish hamda onlayn proktoring orqali imtihon jiddiyatini ta’minlash imkonini beradi. Foydalanuvchilarga shaxsiy kabinet, natija tarixi va tahlil hisobotlari taqdim etiladi.",
+  "category": "Education / EdTech",
+  "image": "/pj8.png",
+  "metric": "+75% baholash aniqligi",
+  "features": [
+    "Test va imtihonlarni tashkil etish",
+    "Avtomatik baholash",
+    "Natijalarni tahlil qilish",
+    "Proktoring integratsiyasi"
+  ],
+  "techStack": [
+    "React",
+    "TypeScript",
+    "Node.js",
+    "Express",
+    "PostgreSQL",
+    "Redis",
+    "WebRTC / AI Proctoring API",
+    "Tailwind CSS"
+  ]
+}

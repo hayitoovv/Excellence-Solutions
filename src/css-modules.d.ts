@@ -15,3 +15,9 @@ declare module '*.module.sass' {
   export default classes;
 }
 
+// src/types/particles.d.ts
+declare module 'particles.js' {
+  const particlesJS: any;
+  export default particlesJS;
+}
+

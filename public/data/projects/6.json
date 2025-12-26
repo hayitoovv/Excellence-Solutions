@@ -1,0 +1,25 @@
+{
+  "id": 6,
+  "title": "Mexatronika Tizimlari",
+  "description": "Sanoat va robototexnika sohasida sensorlar, avtomatlashtirilgan jarayonlar va real vaqt monitoringini birlashtiruvchi intellektual boshqaruv tizimi",
+  "longDescription": "Bu tizim sanoat korxonalari hamda robototexnika va ishlab chiqarish sohalarida qo‘llaniladi. Unda sensorlar va mexanik qurilmalarni markazlashtirilgan boshqarish, avtomatlashtirilgan ishlab chiqarish jarayonlarini doimiy kuzatish, nosozliklarni erta aniqlash hamda real vaqtda monitoring imkoniyatlari mavjud. Tizim ishlab chiqarish samaradorligini oshirish va texnik xizmat ko‘rsatish xarajatlarini kamaytirishga yordam beradi.",
+  "category": "Industrial / IoT / Robotics",
+  "image": "/pj6.png",
+  "metric": "+45% ishlab chiqarish barqarorligi",
+  "features": [
+    "Sensor va qurilmalarni boshqarish",
+    "Avtomatlashtirilgan jarayonlarni nazorat qilish",
+    "Nosozliklarni aniqlash",
+    "Real vaqt monitoringi"
+  ],
+  "techStack": [
+    "Python / C++",
+    "ROS (Robot Operating System)",
+    "MQTT / Modbus",
+    "Node-RED",
+    "InfluxDB / TimescaleDB",
+    "Grafana",
+    "Raspberry Pi / PLC",
+    "React (dashboard uchun)"
+  ]
+}

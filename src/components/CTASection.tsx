@@ -1,6 +1,9 @@
 import { ArrowRight } from 'lucide-react';
+ import ContactModal from './ContactModal';
+ import { useState } from 'react';
 
 export function CTASection() {
+   const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <div className="w-full" style={{ backgroundColor: '#FFFFFF', paddingTop: '96px', paddingBottom: '96px' }}>
       <div className="mx-auto" style={{ maxWidth: '1280px', paddingLeft: '48px', paddingRight: '48px' }}>
@@ -46,6 +49,9 @@ export function CTASection() {
                 O'zaro manfaatli sheriklik va uzoq muddatli hamkorlik munosabatlarini boshlaymiz.
               </p>
               <button
+              onClick={() => setIsModalOpen(true)} 
+
+            
                 style={{
                   display: 'inline-flex',
                   alignItems: 'center',
@@ -66,6 +72,11 @@ export function CTASection() {
                 <span>Bog'lanish</span>
                 <ArrowRight size={20} />
               </button>
+              <ContactModal 
+              isOpen={isModalOpen} 
+              onClose={() => setIsModalOpen(false)} 
+              />
+
             </div>
 
             {/* Right side - Rasm - faqat katta ekranlarda */}

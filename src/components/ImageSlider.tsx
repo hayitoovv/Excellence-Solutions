@@ -36,7 +36,7 @@ export function ImageSlider({ slides, autoPlayInterval = 4000 }: ImageSliderProp
   };
 
   return (
-    <div className="relative w-full h-full group">
+    <div className="relative z-10 w-full h-full group opacity-80">
       {/* Image Container */}
       <div className="relative w-full h-[500px] overflow-hidden">
         {slides.map((slide, index) => (

@@ -1,0 +1,26 @@
+{
+  "id": 9,
+  "title": "Sun’iy Intellekt Asosida O‘qitish",
+  "description": "Har bir talaba uchun shaxsiylashtirilgan o‘quv tajribasini taqdim etuvchi AI asosidagi ta’lim yechimi",
+  "longDescription": "Bu platforma oliy va professional ta’lim sohasida, shu jumladan masofaviy o‘qitish tizimlarida qo‘llaniladi. Tizim talabalarning bilim darajasiga, o‘qish tezligiga va faolligiga qarab individual o‘quv trayektoriyasini shakllantiradi, darsdagi ishtirokni tahlil qiladi, aqlli tavsiyalar (keyingi mavzu, qo‘shimcha materiallar, takrorlash kerak bo‘lgan mavzular) beradi hamda o‘qituvchi va talaba uchun alohida interfeyslarni taqdim etadi.",
+  "category": "Education / AI / EdTech",
+  "image": "/pj9.png",
+  "metric": "+55% o‘quv samaradorligi",
+  "features": [
+    "Individual o‘quv trayektoriyasi",
+    "Talaba faolligini tahlil qilish",
+    "Aqlli tavsiyalar berish",
+    "O‘qituvchi va talaba interfeysi"
+  ],
+  "techStack": [
+    "Python",
+    "TensorFlow / PyTorch",
+    "React",
+    "TypeScript",
+    "Node.js",
+    "PostgreSQL",
+    "Redis",
+    "Tailwind CSS",
+    "RESTful API / WebSocket"
+  ]
+}

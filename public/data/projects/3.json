@@ -1,0 +1,25 @@
+{
+  "id": 3,
+  "title": "Zarmeduniver.com",
+  "description": "Oliy ta’lim muassasasi uchun aqlli veb-portali — talabalar, o‘qituvchilar va boshqaruv tizimini birlashtiruvchi yagona platforma",
+  "longDescription": "Bu loyiha Zarmeduniver.com domeni ostida ishlaydigan rasmiy universitet veb-portali bo‘lib, talabalar va xodimlar uchun shaxsiy kabinet, elektron hujjat almashinuvi, yangiliklar boshqaruvi hamda tahliliy hisobotlar imkoniyatlarini taqdim etadi. Platforma masofaviy ta’lim, rasmiy murojaatlar va institutsional axborot almashinuvini qo‘llab-quvvatlaydi.",
+  "category": "Web",
+  "image": "/pj3.png",
+  "metric": "+70% axborotga kirish tezligi",
+  "features": [
+    "Talabalar va xodimlar uchun shaxsiy kabinet",
+    "Elektron hujjatlar va murojaatlarni qabul qilish",
+    "Yangiliklar va e’lonlarni boshqarish",
+    "Statistik va analitik hisobotlar"
+  ],
+  "techStack": [
+    "React",
+    "TypeScript",
+    "Node.js",
+    "Express",
+    "PostgreSQL",
+    "Tailwind CSS",
+    "JWT / OAuth2",
+    "Nginx"
+  ]
+}

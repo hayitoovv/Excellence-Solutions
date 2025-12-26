@@ -1,0 +1,26 @@
+{
+  "id": 11,
+  "title": "Elektron Do‘kon",
+  "description": "Savdo korxonalari va onlayn bizneslar uchun to‘liq funksional elektron tijorat platformasi",
+  "longDescription": "Bu platforma savdo korxonalari hamda onlayn biznes egalariga mahsulotlarni ko‘rgazmali katalogda namoyish qilish, mijozlarga onlayn buyurtma berish va xavfsiz to‘lov imkoniyatini taqdim etish, ombor hisobini real vaqtda yangilash hamda mijozlar bilan chat yoki bildirishnomalar orqali aloqada bo‘lish imkonini beradi. Tizim sotuvlarni avtomatlashtirish va mijoz tajribasini yaxshilashga qaratilgan.",
+  "category": "E-commerce / Web",
+  "image": "/pj11.png",
+  "metric": "+65% onlayn sotuv hajmi",
+  "features": [
+    "Mahsulotlar katalogi",
+    "Onlayn buyurtma va to‘lov",
+    "Ombor bilan integratsiya",
+    "Mijozlar bilan aloqa"
+  ],
+  "techStack": [
+    "React",
+    "TypeScript",
+    "Node.js",
+    "Express",
+    "PostgreSQL",
+    "Redis",
+    "Stripe / Click / Payme API",
+    "Tailwind CSS",
+    "WebSocket / Socket.IO (chat uchun)"
+  ]
+}

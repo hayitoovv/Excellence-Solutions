@@ -1,0 +1,25 @@
+{
+  "id": 4,
+  "title": "Korxona va tashkilot xodimlari KPI",
+  "description": "Xodimlarning ish samaradorligini avtomatik baholash va KPI asosida monitoring qilish tizimi",
+  "longDescription": "Bu dastur davlat hamda xususiy korxonalar uchun mo‘ljallangan bo‘lib, xodimlarning KPI ko‘rsatkichlarini avtomatik hisoblab, reyting va batafsil hisobotlar orqali kadrlar bo‘limi va rahbariyatga qaror qabul qilishda yordam beradi. Tizim orqali ish natijalari real vaqtda kuzatiladi va tahlil qilinadi.",
+  "category": "HR / Business Intelligence",
+  "image": "/pj4.png",
+  "metric": "+50% baholash samaradorligi",
+  "features": [
+    "Xodimlar samaradorligini baholash",
+    "KPI ko‘rsatkichlarini avtomatik hisoblash",
+    "Reyting va hisobotlarni shakllantirish",
+    "Rahbariyat uchun monitoring paneli"
+  ],
+  "techStack": [
+    "React",
+    "TypeScript",
+    "Node.js",
+    "Express",
+    "PostgreSQL",
+    "Redis",
+    "Chart.js / D3.js",
+    "Tailwind CSS"
+  ]
+}

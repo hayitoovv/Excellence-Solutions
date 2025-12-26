@@ -1,0 +1,29 @@
+{
+  "id": 14,
+  "title": "Fan Tarmoqlaridan Lug‘at Ilavasi",
+  "description": "IT, mexatronika, elektrotexnika, matematika va boshqa fan sohalari uchun ko‘p tilli, aqlli va offline ishlaydigan terminlar lug‘ati",
+  "longDescription": "Bu ilova o‘rta va oliy ta’lim muassasalari, talabalar, o‘qituvchilar hamda IT va texnika sohasidagi mutaxassislarning mustaqil ta’lim va bilimlarni mustahkamlash ehtiyojlarini qondirish uchun mo‘ljallangan. Dastur fan tarmoqlari bo‘yicha keng terminlar bazasini, o‘zbek–rus–ingliz tillaridagi tarjimalar va tushuntirishlarni, aqlli qidiruv (kalit so‘z yoki fan bo‘yicha filtrlash), ovozli o‘qish (TTS), sevimlilar ro‘yxati, qidiruv tarixi, offline rejim, foydalanuvchi tomonidan yangi atamalar qo‘shish hamda sun’iy intellekt asosida shaxsiylashtirilgan tavsiyalar (masalan, “Siz mexatronikani o‘rganayotganingiz uchun quyidagi atamalarni ko‘rib chiqing”) kabi funksiyalarni taqdim etadi.",
+  "category": "Education / Dictionary / Mobile",
+  "image": "/pj14.png",
+  "metric": "+80% fanlar bo‘yicha terminlarni eslab qolish",
+  "features": [
+    "Fan tarmoqlari (IT, mexatronika, tarmoqlar, elektrotexnika, matematika va boshqalar) bo‘yicha terminlar bazasi",
+    "Atamalarning izohi, tarjimasi (o‘zbek–rus–ingliz)",
+    "Aqlli qidiruv (kalit so‘z, fan bo‘yicha)",
+    "Atamalarni ovozli o‘qish (Text-to-Speech)",
+    "Sevimlilar (favorites) va tarixni saqlash",
+    "Yangi atamalarni qo‘shish va yangilab borish",
+    "Offline rejimda ishlash imkoniyati",
+    "Sun’iy intellekt asosida tavsiyalar (o‘rganilayotgan fan bo‘yicha)"
+  ],
+  "techStack": [
+    "React Native",
+    "TypeScript",
+    "Redux / Zustand",
+    "SQLite / Realm ",
+    "Google Cloud Text-to-Speech API / Expo Speech",
+    "Firebase",
+    "FastAPI / Node.js ",
+    "Tailwind CSS / NativeBase"
+  ]
+}
